@@ -43,6 +43,7 @@ function App() {
             <LayoutDashboard size={22} strokeWidth={1.5} />
           </div>
           <div
+            onClick={(prev) => setActive(!prev)}
             className={`p-3 rounded-xl cursor-pointer transition-colors ${active ? "text-[#FF9B00]" : "text-[#0063F0] hover:text-white"}`}
           >
             <Ticket size={22} strokeWidth={1.5} />
@@ -349,7 +350,7 @@ function App() {
 
                   <div className="p-4">
                     <textarea
-                      className="w-full min-h-[100px] resize-none outline-none text-sm text-gray-700 placeholder-gray-400"
+                      className="w-full min-h-25 resize-none outline-none text-sm text-gray-700 placeholder-gray-400"
                       placeholder="Add a reply..."
                     ></textarea>
                   </div>
